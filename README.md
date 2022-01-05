@@ -19,7 +19,7 @@ A command-line application that generates an HTML file containing a group of emp
 
 # Github / Links
 GitHub: https://github.com/SLemons6/team-profile-generator
-Video Walkthrough: https://watch.screencastify.com
+Video Walkthrough: https://watch.screencastify.com/v/dqCa5O5CQzvVOa2V68LF
 
 # Credits
 Created by Shayne Lemons

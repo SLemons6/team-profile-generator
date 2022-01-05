@@ -18,7 +18,7 @@ A command-line application that generates an HTML file containing a group of emp
 * FontAwesome
 
 # Github / Links
-GitHub: https://github.com/SLemons6/team-profile-generator
+GitHub: https://github.com/SLemons6/team-profile-generator <br>
 Video Walkthrough: https://watch.screencastify.com/v/dqCa5O5CQzvVOa2V68LF
 
 # Credits

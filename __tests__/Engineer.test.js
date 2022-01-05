@@ -1,30 +1,20 @@
 const Engineer = require('../lib/Engineer.js');
 const Team = require('../lib/create-site');
 
-test('create an engineer object', () => {
-    const engineer = new Engineer('James');
-
-    expect(engineer.name).toBe('James');
-    expect(engineer.id).toEqual(expect.any(String));
-    expect(engineer.email).toEqual(expect.any(String));
-    expect(engineer.role).toBe('Engineer');
-    expect(engineer.github).toEqual(expect.any(String));
+test("Can set GitHub for Engineer", () => {
+    const engineerGithub = "JohnsGithub";
+    const engineer = new Engineer("John", 1, "John@example.com", engineerGithub);
+    expect(engineer.github).toBe(engineerGithub);
 });
 
-test("gets engineer's id value", () => {
-    const engineer = new Engineer('James');
-
-    expect(engineer.getID()).toEqual(expect.stringContaining(engineer.id.toString()));
+test("getRole() returns \"Engineer\"", () => {
+    const engineerRole = "Engineer";
+    const engineer = new Engineer("John", 1, "John@example.com", "JohnsGithub");
+    expect(engineer.getRole()).toBe(engineerRole);
 });
 
-test("gets engineer's email value", () => {
-    const engineer = new Engineer('James');
-
-    expect(engineer.getEmail()).toEqual(expect.stringContaining(engineer.email.toString()));
-});
-
-test("get's engineer's github value", () => {
-    const engineer = new Engineer('James');
-
-    expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
-});
+test("Can find Github username with getGithub()", () => {
+    const engineerGithub = "JohnsGithub";
+    const engineer = new Engineer("John", 1, "John@example.com", engineerGithub);
+    expect(engineer.getGithub()).toBe(engineerGithub);
+})
